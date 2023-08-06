@@ -8,7 +8,7 @@ import checked from "../../assets/icons-checked.svg";
 const Dashboard = () => {
   return (
     <div className="bg-[#F3F7F9] w-full px-[50px] py-5 md:px-10 lg:px-20" >
-      <h1 className="text-[27px] text-[#3F26A5] pb-3">Dashboard</h1>
+      <h1 className="text-[27px] text-[#3F26A5] pb-3">Dashboard1</h1>
       <Cards />
       <div className="px-7 mt-10 w-full border rounded-[20px] bg-[#ebe9e9] h-[250px]">
         <div >
