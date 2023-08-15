@@ -1,0 +1,49 @@
+.sidebar-menu{
+    display: none;
+}
+.sidebar-btn{
+    width: 180px;
+    padding: 20px;
+}
+.menu-responsive{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.8rem;
+    align-items: center;
+   }
+   .sidebar-bottom{
+    padding: 2.75rem 0 2.75rem 1rem;
+}
+
+@media only screen and (max-width: 590px) {
+   .menu-responsive{
+    display: block;
+   }
+   .sidebar-btn{
+    width: 115px;
+    height: 65px;
+    justify-content: center;
+    padding: 0;
+}
+.menu-responsive img{
+    margin-left: 1.7rem;
+    margin-bottom: 5px;
+    height: 16px;
+    width: 16px;
+}
+.menu-responsive h3{
+    font-size: 13.3px;
+}
+.app-btn img{
+    margin-left: 2.5rem;
+}
+.sett-btn img{
+    margin-left: 1rem;
+}
+.width-responsive{
+    width: 175px;
+}
+.sidebar-bottom{
+    padding: 2.75rem 0 2.75rem 0;
+}
+}

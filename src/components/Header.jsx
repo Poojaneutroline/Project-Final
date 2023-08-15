@@ -20,7 +20,7 @@ const Header = () => {
           </h3>
         </div>
 
-        <div className="flex justify-self-end items-center ">
+        <div className="flex justify-self-end items-center mr-3">
           <img
             src={header_bell}
             className=" h-[30px] w-[23px] md:h-[30px] md:w-[30px] md:mr-[8px] "

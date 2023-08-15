@@ -5,10 +5,11 @@ import request from "../../assets/card_request.png";
 import ok from "../../assets/card_ok.png";
 import arrow from "../../assets/card_arrow.png";
 import icon_ok from "../../assets/icons-ok.svg";
+import "./Dashboard.css";
 
 const Cards = () => {
   return (
-    <div className="flex flex-wrap justify-between ">
+    <div className="flex flex-wrap justify-between cards-div">
       <div
         className="bg-gradient-to-b from-[#D5FEC7] to-[#F5F5F5]
          h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1  "
@@ -30,7 +31,7 @@ const Cards = () => {
 
       <div
         className="bg-gradient-to-b from-[#C7F1FE]  to-[#F5F5F5]
-              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0 mt-[30px] "
+              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0 "
       >
         <div>
           {" "}
@@ -49,7 +50,7 @@ const Cards = () => {
 
       <div
         className="bg-gradient-to-b from-[#E6C7FE]  to-[#F5F5F5]
-              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0 mt-[30px]"
+              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0"
       >
         <div>
           {" "}
@@ -68,7 +69,7 @@ const Cards = () => {
 
       <div
         className="bg-gradient-to-b from-[#FFCDCD]  to-[#F5F5F5]
-              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-[30px] mt-[30px]"
+              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-[0] mt-[0]"
       >
         <div>
           {" "}
