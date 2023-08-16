@@ -3,14 +3,15 @@ import Neutroline_logo from "../assets/Neutroline_logo.png";
 import header_bell from "../assets/header_bell.svg";
 import header_avatar from "../assets/header_avatar.png";
 import header_down from "../assets/header_down.png";
+import "./Header.css";
 
 
 const Header = () => {
   
   return (
   
-      <div className="flex   md:justify-between h-[50px] border bg-[#78C1F3]  md:h-[65px] justify-evenly w-auto">
-        <div className="flex items-center">
+      <div className="header-div">
+        <div className="flex items-center logo-title">
           <img
             src={Neutroline_logo} 
             className=" w-[60px] h-[50px]  md:w-[117px] md:h-[70px]"
