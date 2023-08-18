@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
-import Sidebar from '../components/Sidebar'
+import SidebarOpt from '../components/SidebarOpt'
 import OfferPage from '../components/Announcement/OfferPage'
 const Announcement = () => {
   return (
     <div>
         <Header/>
         <div className='flex'> 
-        <Sidebar/>
+        <SidebarOpt/>
         <OfferPage/>
         </div>
              

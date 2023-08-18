@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from '../components/Header'
+// import Header from '../components/Header'
+import SidebarOpt from '../components/SidebarOpt'
 import Sidebar from '../components/Sidebar'
 import Dashboard from '../components/Dashboard/Dashboard'
 
 const Home = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
+      <Sidebar/>
       <div className='flex '>
-        <Sidebar/>
+        <SidebarOpt/>
         <Dashboard/>
       </div>
     </div>

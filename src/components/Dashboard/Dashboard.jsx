@@ -25,7 +25,7 @@ const Dashboard = () => {
                 <p>You have <span className="text-[#1C19CC]">7 appointments</span> to review.</p>
               </div>
 
-              <div className="flex gap-7 w-[200px] justify-end pl-5 review">
+              <div className="flex gap-4 w-[200px] justify-end pl-5 review">
                 <p className="text-[#0A0879]">Review</p>
                 <img src={cross} className="h-[27px] w-[27px]" />
               </div>
@@ -44,7 +44,7 @@ const Dashboard = () => {
                 <p>You have <span className="text-[#1C19CC]">7 appointments</span> to review.</p>
               </div>
 
-              <div className="flex gap-7 w-[200px] justify-end pl-5 review">
+              <div className="flex gap-4 w-[200px] justify-end pl-5 review">
                 <p className="text-[#0A0879]">Review</p>
                 <img src={cross} className="h-[27px] w-[27px]" />
               </div>
@@ -63,7 +63,7 @@ const Dashboard = () => {
                 <p>You have <span className="text-[#1C19CC]">7 appointments</span> to review.</p>
               </div>
 
-              <div className="flex gap-7 w-[200px] justify-end pl-5 review">
+              <div className="flex gap-4 w-[200px] justify-end pl-5 review">
                 <p className="text-[#0A0879]">Review</p>
                 <img src={cross} className="h-[27px] w-[27px]" />
               </div>

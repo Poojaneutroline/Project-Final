@@ -7,9 +7,14 @@ import settings from "../assets/settings.png";
 import profile from "../assets/admin-photo.png";
 import logout from "../assets/logout-icon.png";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
+import { BiSolidDashboard } from "react-icons/bi";
+import { FaUserClock } from "react-icons/fa";
+import { PiSpeakerSimpleHighFill } from "react-icons/pi";
+import { IoMdSettings } from "react-icons/io";
 
-const Sidebar = () => {
+import "./SidebarOpt.css";
+
+const SidebarOpt = () => {
   const [open, setOpen] = useState(true);
 
   const handleMenu = () => {
@@ -43,9 +48,9 @@ const Sidebar = () => {
           >
             <div className="flex">
             <Link to="/dashboard" className="menu-responsive">
-              <img src={dashboard} className={`w-[18px] h-[18px] ${open ? "ml-0": "ml-3" }`} />
+            <p style={{color:"white"}}><BiSolidDashboard/></p>
               
-                <h3 className={`${!open && "hidden"} text-[15px] `} style={{fontFamily:"Arial"}}>Dashboard</h3>
+                <h3 className={`${!open && "hidden"} text-[15px] `} style={{fontFamily:"Arial", color:"white"}}>Dashboard</h3>
               </Link>
             </div>
           </div>
@@ -57,10 +62,8 @@ const Sidebar = () => {
              } relative duration-300 `}
           >
             <div className="menu-responsive">
-             
-              <img src={appointment} className={`w-[18px] h-[18px] ${open ? "ml-0": "ml-3" }`} />
-             
-              <h3 className={`${!open && "hidden"} text-[15px]`} style={{fontFamily:"Arial"}}>Appointment</h3>
+            <p style={{color:"white"}}><FaUserClock /></p>
+            <h3 className={`${!open && "hidden"} text-[15px]`} style={{fontFamily:"Arial", color:"white"}}>Appointment</h3>
              
             </div>
           </div>
@@ -73,9 +76,8 @@ const Sidebar = () => {
           >
             <div className="flex">
             <Link to="/announcement" className="menu-responsive app-btn">
-              <img src={announcement} className={`w-[18px] h-[18px] ${open ? "ml-0": "ml-3" }` } />
-              
-              <h3 className={`${!open && "hidden"} text-[15px]`} style={{fontFamily:"Arial"}}>Announcement</h3>
+            <p style={{color:"white"}}><PiSpeakerSimpleHighFill /></p>
+              <h3 className={`${!open && "hidden"} text-[15px]`} style={{fontFamily:"Arial", color:"white"}}>Announcement</h3>
               </Link>
             </div>
           </div>
@@ -88,9 +90,8 @@ const Sidebar = () => {
           >
             <div className="flex justify-center gap-4 items-center ">
             <Link to="/settings"  className="menu-responsive sett-btn">
-              <img src={settings} className={`w-[18px] h-[18px] ${open ? "ml-0": "ml-3" }`} />
-              
-                <h3 className={`${!open && "hidden"}  text-[15px]`} style={{fontFamily:"Arial"}}>Settings</h3>{" "}
+            <p style={{color:"white"}}><IoMdSettings /></p>
+            <h3 className={`${!open && "hidden"}  text-[15px]`} style={{fontFamily:"Arial", color:"white"}}>Settings</h3>{" "}
               </Link>
             </div>
           </div>
@@ -126,4 +127,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarOpt;

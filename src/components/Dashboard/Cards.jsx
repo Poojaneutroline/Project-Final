@@ -12,13 +12,13 @@ const Cards = () => {
     <div className="flex flex-wrap justify-between cards-div">
       <div
         className="bg-gradient-to-b from-[#D5FEC7] to-[#F5F5F5]
-         h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1  "
+         h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 cards-box "
       >
         <div>
           {" "}
-          <h3 className="text-[16px] mb-2 font-[400]">Users</h3>
+          <h3 className="text-[16px] mb-2 font-[400] card-title">Users</h3>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between p-img">
           <p className="text-[22px] text-[#1C19CC]">250</p>
           <img src={user} className="mr-2 h-[28px] w-[28px] " />
         </div>
@@ -31,13 +31,13 @@ const Cards = () => {
 
       <div
         className="bg-gradient-to-b from-[#C7F1FE]  to-[#F5F5F5]
-              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0 "
+              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0 cards-box  "
       >
         <div>
           {" "}
-          <h3 className="text-[16px] mb-2 font-[400]">Total Appointments</h3>
+          <h3 className="text-[16px] mb-2 font-[400] card-title">Total Appointments</h3>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between p-img">
           <p className="text-[22px] text-[#1C19CC]">250</p>
           <img src={appointment} className="mr-2  h-[28px] w-[28px] " />
         </div>
@@ -50,13 +50,13 @@ const Cards = () => {
 
       <div
         className="bg-gradient-to-b from-[#E6C7FE]  to-[#F5F5F5]
-              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0"
+              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-0 cards-box "
       >
         <div>
           {" "}
-          <h3 className="text-[16px] mb-2 font-[400]">Appointment Requests</h3>
+          <h3 className="text-[16px] mb-2 font-[400] card-title">Appointment Requests</h3>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between p-img">
           <p className="text-[22px] text-[#1C19CC]">250</p>
           <img src={request} className="mr-2  h-[28px] w-[28px] " />
         </div>
@@ -69,15 +69,15 @@ const Cards = () => {
 
       <div
         className="bg-gradient-to-b from-[#FFCDCD]  to-[#F5F5F5]
-              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-[0] mt-[0]"
+              h-[130px] w-[230px] rounded-[10px] border p-4 flex flex-col gap-1 md:mt-[0] mt-[0] cards-box "
       >
         <div>
           {" "}
-          <h3 className="text-[16px] mb-2 font-[400] ">
+          <h3 className="text-[16px] mb-2 font-[400] card-title">
             Completed Appointments
           </h3>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between p-img">
           <p className="text-[22px] text-[#1C19CC]">250</p>
           <img src={icon_ok} className="mr-2  h-[28px] w-[28px]" />
         </div>

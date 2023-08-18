@@ -7,6 +7,9 @@
     justify-content: space-between;
     row-gap: 1rem;
 }
+.cards-box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
 @media only screen and (max-width: 1040px) {
     .dashboard-main{
         padding-left: 2.5rem;
@@ -64,33 +67,55 @@
        padding-right: 1rem;
     }
 }
+@media only screen and (max-width: 737px){
+    .dashboard-main{
+        padding: 1rem 2rem;
+    }
+    .appo-div{
+        margin-left: 65px!important;
+    }
+    .inner-sum p{
+        font-size: 15px!important;
+
+    }
+}
 @media only screen and (max-width: 795px) {
     .dashboard-main{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 }
-@media only screen and (max-width: 763px) {
-    .inner-sum h2{
-        font-size: 16px;
-    }
-    .inner-sum p{
-        font-size: 13px;
-    }
-    .review img{
-        height: 20px;
-        width: 20px;
-    }
-    .appo-div{
-        margin-left: 0;
-    }
-}
-@media only screen and (max-width: 689px) {
+
+/* @media only screen and (max-width: 689px) {
     .dashboard-main{
         padding-left: 0.8rem;
         padding-right: 0.8rem;
     }
 }
+@media only screen and (max-width: 615px) {
+    .cards-box{
+        width: 215px;
+    }
+    .card-title{
+        font-size: 14px;
+    }
+    .p-img p{
+        font-size: 15px;
+    }
+    .p-img img{
+        height: 20px;
+        width: 20px;
+    } 
+}
+@media only screen and (max-width: 605px){
+    .cards-div{
+        width: 95%;
+    }
+    .cards-box{
+        width: 195px;
+        height: 120px;
+    }
+} */
 @media only screen and (max-width: 1005px) {
     .appo-div{
         margin-left: 50px;

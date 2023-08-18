@@ -9,7 +9,7 @@ import "./Header.css";
 const Header = () => {
   
   return (
-  
+    <div>
       <div className="header-div">
         <div className="flex items-center logo-title">
           <img
@@ -42,7 +42,7 @@ const Header = () => {
           />
         </div>
       </div>
-      
+    </div>
 
   );
 };
