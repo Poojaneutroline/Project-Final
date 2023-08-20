@@ -1,0 +1,27 @@
+.Backward{
+    display: none;
+}
+.backward-btn{
+    border: none;
+    padding: 5px 12px;
+    /* background:  rgba(0,213,255,1); */
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px;
+}
+.backward-btn svg{
+    color: rgba(0,213,255,1);
+    font-size: 16px;
+    stroke-width: 2px;
+    margin-bottom: 2px;
+}
+.back-btn:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (max-width: 737px){
+    .Backward{
+        display: block;
+    }
+}

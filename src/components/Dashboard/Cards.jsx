@@ -23,7 +23,7 @@ const Cards = () => {
           <img src={user} className="mr-2 h-[28px] w-[28px] " />
         </div>
 
-        <div className="flex items-center gap-1 justify-end mt-3">
+        <div className="flex items-center gap-1 justify-end mt-3 see-all">
           <p className="text-[9px] ">See all Users</p>
           <img src={arrow} className="h-[12px] w-[12px] " />
         </div>
@@ -42,7 +42,7 @@ const Cards = () => {
           <img src={appointment} className="mr-2  h-[28px] w-[28px] " />
         </div>
 
-        <div className="flex items-center gap-1 justify-end mt-3">
+        <div className="flex items-center gap-1 justify-end mt-3 see-all">
           <p className="text-[9px]">See all Appointments</p>
           <img src={arrow} className="h-[12px] w-[12px]" />
         </div>
@@ -61,7 +61,7 @@ const Cards = () => {
           <img src={request} className="mr-2  h-[28px] w-[28px] " />
         </div>
 
-        <div className="flex items-center gap-1 justify-end mt-3">
+        <div className="flex items-center gap-1 justify-end mt-3 see-all">
           <p className="text-[9px]">See all Requests</p>
           <img src={arrow} className="h-[12px] w-[12px] " />
         </div>
@@ -82,7 +82,7 @@ const Cards = () => {
           <img src={icon_ok} className="mr-2  h-[28px] w-[28px]" />
         </div>
 
-        <div className="flex items-center gap-1 justify-end mt-3">
+        <div className="flex items-center gap-1 justify-end mt-3 see-all">
           <p className="text-[9px]">See all</p>
           <img src={arrow} className="h-[10px] w-[15px] " />
         </div>

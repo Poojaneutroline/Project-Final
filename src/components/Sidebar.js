@@ -12,7 +12,8 @@ import header_avatar from "../assets/header_avatar.png";
 import header_down from "../assets/header_down.png";
 import { FaBeer } from 'react-icons/fa';
 import "./Sidebar.css";
-
+import profile from "../assets/admin-photo.png";
+import logout from "../assets/logout-icon.png";
 
 const Nav = styled.div`
 background: #068fffa6;
@@ -35,7 +36,7 @@ align-items: center;
 const SidebarNav = styled.nav`
 // background: #068fffa6;
 background: white;
-padding: 0 1rem;
+padding: 1.25rem 0.75rem;
 width: 215px;
 height: 100vh;
 display: flex;
@@ -64,7 +65,7 @@ return (
 			<FaIcons.FaBars onClick={showSidebar} />
 			
 		</NavIcon> 
-		<div style={{display:"flex", textAlign:"center"}}>
+		<div style={{display:"flex", textAlign:"center"}} className="logo-div">
 		<img
             src={Neutroline_logo} 
             className="logo-img"
@@ -82,10 +83,10 @@ return (
 		</div>
 		
 		<div>
-        <div className="flex justify-self-end items-center mr-3">
+        <div className="flex justify-self-end items-center mr-5 nav-right">
           <img
             src={header_bell}
-            className=" h-[30px] w-[23px] md:h-[30px] md:w-[30px] md:mr-[8px] "
+            className=" h-[30px] w-[23px] md:h-[30px] md:w-[30px] md:mr-[8px] bell-img"
           />
           <h3 className=" text-[13px] hidden md:mr-[8px] md:text-[15px] md:block ">
             Pooja Tiwari
@@ -95,11 +96,11 @@ return (
           </h3>
           <img
             src={header_avatar}
-            className="h-[30px] w-[30px] mr-[10px] md:h-[30px] md:w-[30px]"
+            className="h-[30px] w-[30px] mr-[5px] md:h-[30px] md:w-[30px] avatar-img"
           />
           <img
             src={header_down}
-            className="h-[13px] w-[13xpx] mr-[32px] md:h-[16px] md:w-[16px]"
+            className="h-[13px] w-[13xpx] mr-[10px] md:h-[16px] md:w-[16px] down-img"
           />
         </div>
           
@@ -107,12 +108,21 @@ return (
 		</Nav>
 		<SidebarNav sidebar={sidebar}>
 		<SidebarWrap>
-			<NavIcon to="#">
+			{/* <NavIcon to="#"> */}
 			<AiIcons.AiOutlineClose onClick={showSidebar} />
-			</NavIcon>
+			{/* </NavIcon> */}
 			{SidebarData.map((item, index) => {
 			return <SubMenu item={item} key={index} />;
+			
 			})}
+			<div className="flex justify-center gap-3 items-center bottom-menu-link">
+                <img src={profile} className={`w-[20px] h-[20px]`} />
+                <h3 >Profile</h3>
+              </div>
+			  <div className="flex  justify-center gap-3 items-center">
+                <img src={logout} className={`w-[20px] h-[20px]`} />
+                <h3>Logout</h3>
+              </div>
 		</SidebarWrap>
 		</SidebarNav>
 	</IconContext.Provider>

@@ -1,6 +1,10 @@
 .dashboard-main{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+    background: #f3f7f9b0;
+}
+.summ-div{
+    background: #ebe9e9b6;
 }
 .cards-div{
     display: flex;
@@ -34,12 +38,7 @@
         padding-right: 2.5rem;
     }
 }
-@media only screen and (max-width: 590px) {
-    .dashboard-main{
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-}
+
 @media only screen and (max-width: 1075px) {
     .appo-div{
         width: 100%;
@@ -68,11 +67,9 @@
     }
 }
 @media only screen and (max-width: 737px){
-    .dashboard-main{
-        padding: 1rem 2rem;
-    }
+    
     .appo-div{
-        margin-left: 65px!important;
+        justify-content: center;
     }
     .inner-sum p{
         font-size: 15px!important;
@@ -86,16 +83,10 @@
     }
 }
 
-/* @media only screen and (max-width: 689px) {
-    .dashboard-main{
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
-    }
-}
 @media only screen and (max-width: 615px) {
-    .cards-box{
+    /* .cards-box{
         width: 215px;
-    }
+    } */
     .card-title{
         font-size: 14px;
     }
@@ -107,15 +98,111 @@
         width: 20px;
     } 
 }
-@media only screen and (max-width: 605px){
-    .cards-div{
-        width: 95%;
-    }
+@media only screen and (max-width: 599px){
+   .inner-sum h2{
+    font-size: 16px;
+   }
+   .inner-sum img{
+    height: 15px;
+    width: 15px;
+   }
+   .inner-sum p{
+    font-size: 14px!important;
+   }
+   .review p{
+    font-size: 13px!important;
+   }
+   .review img{
+    height: 15.5px;
+    width: 15.5px;
+    margin-top: 3px;
+   }
+}
+@media only screen and (max-width: 515px){
     .cards-box{
-        width: 195px;
-        height: 120px;
+        width: 215px;
     }
-} */
+    .inner-sum {
+        padding: 0 0.5rem 0 0.5rem!important;
+    }
+    .inner-sum h2{
+        font-size: 15.5px;
+       }
+       .inner-sum img{
+        height: 14px;
+        width: 14px;
+       }
+       .inner-sum p{
+        font-size: 13px!important;
+       }
+       .review p{
+        font-size: 13px!important;
+       }
+       .review img{
+        height: 15px;
+        width: 15px;
+        margin-top: 3px;
+       }
+       .dashboard-main{
+        padding-left: 1rem!important;
+        padding-right: 1rem!important;
+    }
+} 
+@media only screen and (max-width: 470px) {
+   .cards-div{
+    width: 100%;
+    justify-content: center;
+   }
+   .cards-box{
+    width: 422px;
+    height: 200px;
+    padding: 1.5rem 2rem;
+}
+.card-title{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.p-img p{
+    font-size: 20px;
+}
+.p-img img{
+    height: 28px;
+    width: 28px;
+} 
+.dash-title{
+    text-align: left;
+}
+.see-all{
+    margin-top: 1.75rem;
+}
+.see-all p{
+    font-size: 13px;
+}
+.see-all img{
+    margin-top: 3px;
+}
+}
+@media only screen and (max-width: 450px){
+    .inner-sum{
+        height: auto!important;
+        padding: 0.5rem!important;
+    }
+    .summ-div{
+        height: auto!important;
+        padding: 0 1rem 1rem 1rem!important;
+    }
+    .inner-sum h2{
+        font-size: 14.5px!important;
+    }
+    
+}
+@media only screen and (max-width: 400px){
+    .appo-div{
+        margin-left: 0!important;
+    }
+    
+}
+
 @media only screen and (max-width: 1005px) {
     .appo-div{
         margin-left: 50px;

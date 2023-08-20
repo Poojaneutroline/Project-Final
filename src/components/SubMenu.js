@@ -9,13 +9,13 @@ background: #068fffa6;
 color: white;
 justify-content: space-between;
 align-items: center;
-padding: 17px;
+padding: 20px;
 list-style: none;
-height: 50px;
+height: 48px;
 text-decoration: none;
-font-size: 18px;
-margin-bottom: 1rem;
-border-radius: 10px;
+font-size: 15px;
+margin-bottom: 10px;
+border-radius: 0.375rem;
 
 &:hover {
 	background: gray;
@@ -65,6 +65,7 @@ return (
 			: null}
 		</div>
 	</SidebarLink>
+	
 	{subnav &&
 		item.subNav.map((item, index) => {
 		return (
@@ -74,6 +75,7 @@ return (
 			</DropdownLink>
 		);
 		})}
+		
 	</>
 );
 };

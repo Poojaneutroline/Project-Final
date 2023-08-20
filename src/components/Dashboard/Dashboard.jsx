@@ -5,13 +5,17 @@ import cross from "../../assets/dash_cross.png";
 import checkmark from "../../assets/icons-checkmark.png";
 import checked from "../../assets/icons-checked.svg";
 import "./Dashboard.css";
+
  
 const Dashboard = () => {
+
+  
+
   return (
-    <div className="bg-[#F3F7F9] w-full px-[50px] py-5 md:px-10 dashboard-main" >
-      <h1 className="text-[27px] text-[#3F26A5] pb-3">Dashboard</h1>
+    <div className="w-full px-[50px] py-5 md:px-10 dashboard-main">
+      <h1 className="text-[27px] text-[#3F26A5] pb-3 dash-title">Dashboard</h1>
       <Cards />
-      <div className="px-7 mt-10 w-full border rounded-[20px] bg-[#ebe9e9] h-[250px] summ-div">
+      <div className="px-7 mt-10 w-full border rounded-[10px] h-[250px] summ-div">
         <div >
           <h1 className="text-[22px] my-2.5">Summary</h1>
           <div className=" flex">

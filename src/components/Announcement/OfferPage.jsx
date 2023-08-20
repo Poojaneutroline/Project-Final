@@ -10,6 +10,9 @@ import "./offermodal.css";
 import Offers from "./Offers";
 import Annouce from "./Annouce";
 import Expired from "./Expired";
+import { BsArrowLeft  } from 'react-icons/bs';
+import { useNavigate } from "react-router-dom";
+import "./OfferPage.css";
 
 const OfferPage = () => {
   const [activeTab, setActiveTab] = useState("offers");
@@ -38,10 +41,14 @@ const OfferPage = () => {
     setAddModalOpen(false);
   };
  
+  const navigate = useNavigate();
 
   
   return (
     <div className="flex flex-col px-[50px] py-4 w-full bg-[#F3F7F9] gap-3 overflow-y-hidden">
+      <div className="Backward">
+        <button onClick={() => navigate(-1)} className="backward-btn"><BsArrowLeft /></button>
+      </div>
       <Modal
         open={addmodalOpen}
         onClose={closeAddModal}
