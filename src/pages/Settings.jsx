@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
+// import Header from "../components/Header";
+import Sidebar from '../components/Sidebar'
 import SidebarOpt from "../components/SidebarOpt";
 import Bhours from "../components/Bhours";
 import Service from "../components/Service";
@@ -7,7 +8,8 @@ import Service from "../components/Service";
 const Settings = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <Sidebar />
       <div className="flex relative">
         <SidebarOpt />
         <div className="px-[80px] py-5 overflow-y-hidden">

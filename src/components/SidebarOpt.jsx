@@ -40,7 +40,7 @@ const SidebarOpt = () => {
           </div>
 
           <div
-            className={`flex  h-[48px] bg-[#78C1F3] items-center    w-[190px] mt-[10px]
+            className={`flex  h-[48px] bg-[#1a98ecbd] items-center    w-[190px] mt-[10px]
             rounded-md sidebar-btn
              ${
                open ? "w-[190px] items-center" : "w-[60px] p-[5px] ml-0"
@@ -55,7 +55,7 @@ const SidebarOpt = () => {
             </div>
           </div>
           <div
-             className={`flex  h-[48px] bg-[#78C1F3] items-center    w-[190px] mt-[10px]
+             className={`flex  h-[48px] bg-[#1a98ecbd] items-center    w-[190px] mt-[10px]
              rounded-md  sidebar-btn
              ${
                open ? "w-[190px] items-center" : "w-[60px] p-[5px] ml-0"
@@ -68,7 +68,7 @@ const SidebarOpt = () => {
             </div>
           </div>
           <div
-            className={`flex  h-[48px] bg-[#78C1F3] items-center    w-[190px] mt-[10px]
+            className={`flex  h-[48px] bg-[#1a98ecbd] items-center    w-[190px] mt-[10px]
             rounded-md  sidebar-btn
              ${
                open ? "w-[190px] items-center" : "w-[60px] p-[5px] ml-0"
@@ -82,7 +82,7 @@ const SidebarOpt = () => {
             </div>
           </div>
           <div
-              className={`flex  h-[48px] bg-[#78C1F3] items-center    w-[190px] mt-[10px]
+              className={`flex  h-[48px] bg-[#1a98ecbd] items-center    w-[190px] mt-[10px]
               rounded-md sidebar-btn
              ${
                open ? "w-[190px] items-center" : "w-[60px] p-[5px] ml-0"

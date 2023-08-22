@@ -4,6 +4,10 @@
 .sidebar-btn{
     width: 180px;
     padding: 20px;
+   
+}
+.sidebar-btn:hover{
+    background: #1a98ecbd;
 }
 .menu-responsive{
     display: flex;

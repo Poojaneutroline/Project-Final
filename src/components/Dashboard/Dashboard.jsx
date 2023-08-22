@@ -20,7 +20,7 @@ const Dashboard = () => {
           <h1 className="text-[22px] my-2.5">Summary</h1>
           <div className=" flex">
             <div className="bg-white h-[45px] w-full rounded-[5px] flex items-center justify-between px-8 mb-2 shadow-sm inner-sum">
-              <div>
+              <div className="first-inner">
                 <h2 className="text-[#346AFF] text-[18px] w-[100px] font-[500] ">Yesterday</h2>
               </div>
 
@@ -39,7 +39,7 @@ const Dashboard = () => {
           </div>
           <div className="flex">
             <div className="bg-white h-[45px] w-full rounded-[5px] flex items-center justify-between px-8 mb-2 shadow-sm  inner-sum">
-              <div>
+              <div className="first-inner">
                 <h2 className="text-[#346AFF] text-[18px] w-[100px] font-[500]">Today</h2>
               </div>
 
@@ -58,7 +58,7 @@ const Dashboard = () => {
           </div>
           <div className=" flex">
             <div className="bg-white h-[45px] w-full rounded-[5px] flex items-center justify-between px-8 shadow-sm  inner-sum">
-              <div>
+              <div className="first-inner">
                 <h2 className="text-[#346AFF] text-[18px] w-[100px] font-[500]">Tomorrow</h2>
               </div>
 

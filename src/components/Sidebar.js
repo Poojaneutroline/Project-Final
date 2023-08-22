@@ -16,7 +16,7 @@ import profile from "../assets/admin-photo.png";
 import logout from "../assets/logout-icon.png";
 
 const Nav = styled.div`
-background: #068fffa6;
+background: #1a98ecbd;
 height: 65px;
 display: flex;
 justify-content: space-between;

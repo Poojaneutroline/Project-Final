@@ -149,25 +149,26 @@
     }
 } 
 @media only screen and (max-width: 470px) {
+    
    .cards-div{
     width: 100%;
-    justify-content: center;
+    
    }
    .cards-box{
-    width: 422px;
-    height: 200px;
-    padding: 1.5rem 2rem;
+    width: 292px;
+    height: 162px;
+    padding: 1rem 1.5rem;
 }
 .card-title{
-    font-size: 20px;
-    margin-bottom: 1rem;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
 }
 .p-img p{
-    font-size: 20px;
+    font-size: 17px;
 }
 .p-img img{
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 } 
 .dash-title{
     text-align: left;
@@ -176,10 +177,16 @@
     margin-top: 1.75rem;
 }
 .see-all p{
-    font-size: 13px;
+    font-size: 12px;
 }
-.see-all img{
-    margin-top: 3px;
+.summ-div{
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    border: none;
+}
+.inner-sum{
+    background: #ebe9e98a;
 }
 }
 @media only screen and (max-width: 450px){
@@ -189,20 +196,58 @@
     }
     .summ-div{
         height: auto!important;
-        padding: 0 1rem 1rem 1rem!important;
     }
     .inner-sum h2{
         font-size: 14.5px!important;
     }
     
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 416px){
     .appo-div{
         margin-left: 0!important;
     }
     
 }
-
+@media only screen and (max-width: 408px) {
+    .inner-sum h2{
+        font-size: 13.5px!important;
+    }
+    .appo-div p{
+        font-size: 12px!important;
+    }
+ }
+ @media only screen and (max-width: 395px) {
+    .first-inner{
+        width: 50%;
+    }
+    .first-inner h2{
+        width: 50%;
+    }
+    .inner-sum h2{
+        font-size: 13px!important;
+    }
+    .review{
+        padding-left: 0;
+        width: 50%;
+    }
+ }
+ @media only screen and (max-width: 347px) {
+    .first-inner{
+        width: 40%;
+    }
+    .review{
+        padding-left: 0;
+        width: 40%;
+        gap: 0.2rem;
+    }
+    .review p{
+        font-size: 12px!important;
+    }
+    .cards-box{
+        width: 280px;
+        height: 155px;
+    }
+ }
 @media only screen and (max-width: 1005px) {
     .appo-div{
         margin-left: 50px;
