@@ -10,7 +10,7 @@ import Neutroline_logo from "../assets/Neutroline_logo.png";
 import header_bell from "../assets/header_bell.svg";
 import header_avatar from "../assets/header_avatar.png";
 import header_down from "../assets/header_down.png";
-import { FaBeer } from 'react-icons/fa';
+import { FaUserCircle } from 'react-icons/fa';
 import "./Sidebar.css";
 import profile from "../assets/admin-photo.png";
 import logout from "../assets/logout-icon.png";
@@ -86,7 +86,7 @@ return (
         <div className="flex justify-self-end items-center mr-5 nav-right">
           <img
             src={header_bell}
-            className=" h-[30px] w-[23px] md:h-[30px] md:w-[30px] md:mr-[8px] bell-img"
+            className=" h-[25px] w-[23px] md:h-[25px] md:w-[23px] md:mr-[6px] bell-img"
           />
           <h3 className=" text-[13px] hidden md:mr-[8px] md:text-[15px] md:block ">
             Pooja Tiwari
@@ -94,10 +94,11 @@ return (
           <h3 className=" md:hidden text-[13px] p-1">
             Pooja 
           </h3>
-          <img
+          {/* <img
             src={header_avatar}
             className="h-[30px] w-[30px] mr-[5px] md:h-[30px] md:w-[30px] avatar-img"
-          />
+          /> */}
+		  <p style={{paddingRight:"5px", fontSize:"18px"}}><FaUserCircle style={{color:"#0D1282"}} /></p>
           <img
             src={header_down}
             className="h-[13px] w-[13xpx] mr-[10px] md:h-[16px] md:w-[16px] down-img"
@@ -115,14 +116,7 @@ return (
 			return <SubMenu item={item} key={index} />;
 			
 			})}
-			<div className="flex justify-center gap-3 items-center bottom-menu-link">
-                <img src={profile} className={`w-[20px] h-[20px]`} />
-                <h3 >Profile</h3>
-              </div>
-			  <div className="flex  justify-center gap-3 items-center">
-                <img src={logout} className={`w-[20px] h-[20px]`} />
-                <h3>Logout</h3>
-              </div>
+			
 		</SidebarWrap>
 		</SidebarNav>
 	</IconContext.Provider>

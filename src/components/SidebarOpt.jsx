@@ -95,32 +95,7 @@ const SidebarOpt = () => {
               </Link>
             </div>
           </div>
-          <div className="sidebar-bottom">
-          <div
-             className={`flex  h-[48px] bg-white items-center    w-[190px] mt-[10px]
-             rounded-md p-[20px] sidebar-btn
-             ${
-               open ? "w-[190px] items-center" : "w-[60px] p-[5px] ml-0"
-             } relative duration-300 `}
-          >
-              <div className="flex justify-center gap-3 items-center">
-                <img src={profile} className={`w-[20px] h-[20px] ${open ? "ml-0": "ml-3" }`} />
-                <h3 className={`${!open && "hidden"} `}>Profile</h3>
-              </div>
-            </div>
-            <div
-                className={`flex  h-[48px] bg-white items-center    w-[190px] mt-[10px]
-                rounded-md p-[20px] sidebar-btn
-             ${
-               open ? "w-[190px]" : "w-[60px] p-[5px] ml-0"
-             } relative duration-300 `}
-            >
-              <div className="flex  justify-center gap-3 items-center">
-                <img src={logout} className={`w-[20px] h-[20px] ${open ? "ml-0": "ml-3" }`} />
-                <h3 className={`${!open && "hidden"}  `}>Logout</h3>
-              </div>
-            </div>
-          </div>
+         
         </div>
      
     

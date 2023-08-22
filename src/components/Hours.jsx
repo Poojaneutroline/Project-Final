@@ -198,4 +198,4 @@ const Hours = () => {
   )
 }
 
-export default Hours
+export default Hours;
