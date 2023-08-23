@@ -154,9 +154,9 @@ const Service = () => {
           + Add Services
         </button>
       </div>
-      <div className=" flex justify-center mt-[8px] rounded-[10px]">
-        <div className="max-h-[250px] overflow-y-auto rounded-[10px]">
-          <table className="table-auto border rounded-md">
+      <div className=" flex justify-center mt-[8px] rounded-[10px] allservice-div">
+        <div className="max-h-[250px] overflow-y-auto rounded-[10px] w-full servicescroll">
+          <table className="table-auto border rounded-md w-full">
             <thead className="border rounded-[100px] sticky top-0 z-10">
               <tr className="h-[50px]  text-[15px] bg-[#d6e0fa] rounded-[10px] ">
                 <th className=" font-man font-medium md:w-[50px] ">ID</th>

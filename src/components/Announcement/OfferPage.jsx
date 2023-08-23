@@ -3,6 +3,7 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal"
 import AddOffersModal from "./AddOffersModal";
 import "./offermodal.css";
+import "./OfferPage.css";
 import Offers from "./Offers";
 import Annouce from "./Annouce";
 import Expired from "./Expired";
@@ -48,7 +49,7 @@ const OfferPage = () => {
 
   return (
     <AppProvider>
-      <div className="flex flex-col px-[50px] py-4 w-full bg-[#F3F7F9] gap-3 overflow-y-hidden">
+      <div className="offer-main">
         <Modal
           open={modalOpen}
           onClose={closeModal}
@@ -62,24 +63,10 @@ const OfferPage = () => {
           {addModalType === "announcement" && <AddAnnouncementForm />}
         {addModalType === "offers" && <AddOffersModal />}
         </Modal>
-        <div className="flex  items-center justify-between w-full">
+        <div className="items-center w-full title-div">
           <h1 className="text-[27px] text-[#3F26A5] ">Announcement</h1>
 
-          {activeTab === "announcement" || activeTab === "offers" ? (
-            <button
-              className="flex items-center justify-center gap-2  p-3 text-center text-[#5B76FC] text-inter text-[16px] font-[600] rounded-[6px] bg-[#fbfbfb] shadow-shado2 hover:text-[#4d61ba] hover:bg-[#fdfdfd]
-  "
-              onClick={() =>
-                activeTab === "announcement"
-                  ? openModal("announcement")
-                  : openModal("offers")
-              }
-            >
-              {activeTab === "announcement"
-                ? "+ Add Announcement"
-                : "+ Add Offers"}
-            </button>
-          ) : null}
+          
         </div>
 
         <div className="flex ">
@@ -140,7 +127,26 @@ const OfferPage = () => {
             Expired
           </button>
         </div>
-        <div className="mt-[30px] flex flex-wrap gap-8">
+
+        <div className="addoffer-div">
+        {activeTab === "announcement" || activeTab === "offers" ? (
+            <button
+              className="flex items-center justify-center gap-2  p-3 text-center text-[#5B76FC] text-inter text-[16px] font-[600] rounded-[6px] bg-[#fbfbfb] shadow-shado2 hover:text-[#4d61ba] hover:bg-[#fdfdfd]
+  "
+              onClick={() =>
+                activeTab === "announcement"
+                  ? openModal("announcement")
+                  : openModal("offers")
+              }
+            >
+              {activeTab === "announcement"
+                ? "+ Add Announcement"
+                : "+ Add Offers"}
+            </button>
+          ) : null}
+        </div>
+
+        <div className="mt-[12px] flex flex-wrap gap-8">
           <div>
             {activeTab === "offers" && <Offers />}
             {activeTab === "announcement" && <Annouce />}
@@ -148,6 +154,8 @@ const OfferPage = () => {
           </div>
         </div>
       </div>
+
+      
     </AppProvider>
   );
 };

@@ -98,7 +98,7 @@ return (
             src={header_avatar}
             className="h-[30px] w-[30px] mr-[5px] md:h-[30px] md:w-[30px] avatar-img"
           /> */}
-		  <p style={{paddingRight:"5px", fontSize:"18px"}}><FaUserCircle style={{color:"#0D1282"}} /></p>
+		  <p style={{paddingRight:"5px", fontSize:"18px"}}><FaUserCircle style={{color:"#D5FFD0"}} /></p>
           <img
             src={header_down}
             className="h-[13px] w-[13xpx] mr-[10px] md:h-[16px] md:w-[16px] down-img"

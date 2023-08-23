@@ -17,11 +17,11 @@ font-size: 15px;
 margin-bottom: 10px;
 border-radius: 0.375rem;
 
-&:hover {
-	background: gray;
-	// border-left: 4px solid green;
-	cursor: pointer;
-}
+// &:hover {
+// 	background: gray;
+// 	// border-left: 4px solid green;
+// 	cursor: pointer;
+// }
 `;
 
 const SidebarLabel = styled.span`

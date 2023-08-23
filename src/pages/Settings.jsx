@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar'
 import SidebarOpt from "../components/SidebarOpt";
 import Service from "../components/Service";
 import BhoursC from "../components/BHoursC";
+import "./Settings.css";
 
 const Settings = () => {
   return (
@@ -12,8 +13,8 @@ const Settings = () => {
       <Sidebar />
       <div className="flex relative">
         <SidebarOpt />
-        <div className="px-[80px] py-5 overflow-y-hidden">
-          <h1 className="text-[27px] text-[#3F26A5] ">Settings</h1>
+        <div className="settings-main">
+          <h1 className="text-[27px] text-[#3F26A5] sett-title">Settings</h1>
           <BhoursC />
         <Service/>
         </div>

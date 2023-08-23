@@ -7,3 +7,20 @@
     background:none;
     padding:0;
   }
+  .allservice-div{
+    /* border: 1px solid; */
+    padding: 0;
+  }
+  .servicescroll::-webkit-scrollbar{
+    width: 7px;
+  }
+  .servicescroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.24);
+  }
+  
+  .servicescroll::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.24);
+    border-radius: 15px; 
+  } 
+

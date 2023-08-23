@@ -4,11 +4,16 @@
 .sidebar-btn{
     width: 180px;
     padding: 20px;
-   
+   display: flex;
+   height: 48px;
+   align-items: center;
+   border-radius: 10px;
+   background: #1a98ecbd;
 }
 .sidebar-btn:hover{
-    background: #1a98ecbd;
+    background: #3182b8bd;
 }
+
 .menu-responsive{
     display: flex;
     justify-content: center;
